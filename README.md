@@ -34,8 +34,53 @@ ESP8266 딥슬립(deep sleep)하는 방법과 소모전류 측정해보기!(deep
 다음으로 유저에 명령에 의해 딥슬립이 걸리고 풀리는 예제를 몇가지 구현해보도록 하자!
 
 1.wemos d1 mini보드에 deepsleep을 설정하는 기본 예시를 보이시오!<BR>
-2.보드 5종을 이용해서 기본예제 7개의 소모전류를 각각 측정하시오!<BR>
 ![487-2_bb](https://user-images.githubusercontent.com/106683637/171438851-9c082121-4df0-42d6-8d27-9e4465d1f605.jpg)<BR>
+2.보드 5종을 이용해서 기본예제 7개의 소모전류를 각각 측정하시오!<BR>
+A.그냥 기본코드만 올렸을때<BR>
+B.간단한 시리얼출력구문일때<BR>
+C.온습도센서 1개가 달려있고 2초마다 센서값을 측정할때<BR>
+D.인터넷공유기와 연결되어있을때<BR>
+E.웹서버로 작동중일때<BR>
+F.MQTT로 작동중일때<BR>
+G.DeepSleep이 걸렸을때<BR>
+
+1.아두이노 우노<BR>
+   A.10.0ma<BR>
+   B.10.9ma<BR>
+   C.13.0ma<BR>
+2.wemos d1r1<BR>
+   A.74.0ma<BR>
+   B.71.0ma<BR>
+   C.74.0ma<BR>
+   D.74.3ma<BR>
+   E.76.0ma<BR>
+   F.76.0ma<BR>
+   G.4.8ma<BR>
+3.wemos d1 mini ch340<BR>
+   A.89.0ma<BR>
+   B.86.0ma<BR>
+   C.90.0ma<BR>
+   D.89.0ma<BR>
+   E.90.7ma<BR>
+   F.90.3ma<BR>
+   G.17.1ma<BR>
+4.wemos d1 mini V3.0.0<BR>
+   A.75.3ma<BR>
+   B.71.4ma<BR>
+   C.78.0ma<BR>
+   D.74.3ma<BR>
+   E.75.4ma<BR>
+   F.75.0ma<BR>
+   G.2.7ma<BR>
+5.wemos d1 mini pro 4M<BR>
+   A.79.5ma<BR>
+   B.75.4ma<BR>
+   C.81.0ma<BR>
+   D.77.0ma<BR>
+   E.77.0ma<BR>
+   F.77.8ma<BR>
+   G.3.9ma<BR>
+  
 3.버튼 1개를 연결해서 내가 원하는 타이밍에 딥슬립을 걸 수 있도록 하시오!<BR>
 ![487-3_bb](https://user-images.githubusercontent.com/106683637/171438930-cea07f86-07dd-4b86-af06-34185e6a3ff9.jpg)<BR>
 4.보드에 온습도센서가 달려있고 10초에한번마다 측정한다고 할때 시리얼모니터에 출력하고 나머지 시간은 딥슬립을 거시오!<BR>
@@ -77,6 +122,51 @@ Next, let's implement some examples in which deep sleep is applied and released 
 
 1. Show a basic example of setting up deepsleep on wemos d1 mini board!<BR>
 2. Measure the current consumption of each of the 7 basic examples using 5 types of boards!<BR>
+A. When only the basic code is uploaded<BR>
+B. In case of simple serial output syntax<BR>
+C. When a temperature and humidity sensor is attached and the sensor value is measured every 2 seconds<BR>
+D. When connected to an Internet router<BR>
+E. When operating as a web server<BR>
+F. When working with MQTT<BR>
+G. During deep sleep<BR>
+  
+1.arduino uno<BR>
+   A.10.0ma<BR>
+   B.10.9ma<BR>
+   C.13.0ma<BR>
+2.wemos d1r1<BR>
+   A.74.0ma<BR>
+   B.71.0ma<BR>
+   C.74.0ma<BR>
+   D.74.3ma<BR>
+   E.76.0ma<BR>
+   F.76.0ma<BR>
+   G.4.8ma<BR>
+3.wemos d1 mini ch340<BR>
+   A.89.0ma<BR>
+   B.86.0ma<BR>
+   C.90.0ma<BR>
+   D.89.0ma<BR>
+   E.90.7ma<BR>
+   F.90.3ma<BR>
+   G.17.1ma<BR>
+4.wemos d1 mini V3.0.0<BR>
+   A.75.3ma<BR>
+   B.71.4ma<BR>
+   C.78.0ma<BR>
+   D.74.3ma<BR>
+   E.75.4ma<BR>
+   F.75.0ma<BR>
+   G.2.7ma<BR>
+5.wemos d1 mini pro 4M<BR>
+   A.79.5ma<BR>
+   B.75.4ma<BR>
+   C.81.0ma<BR>
+   D.77.0ma<BR>
+   E.77.0ma<BR>
+   F.77.8ma<BR>
+   G.3.9ma<BR>
+  
 3. Connect 1 button so that I can put a deep sleep at the timing I want!<BR>
 4. When the board has a temperature and humidity sensor and it measures every 10 seconds, print it out on the serial monitor and do deep sleep for the rest of the time!<BR>
 5. Send the temperature and humidity values ​​to MQTT once for 10 seconds and go deep sleep!<BR>
