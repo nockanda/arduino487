@@ -1,0 +1,25 @@
+#include "DHT.h"
+
+//#define DHTPIN 3
+#define DHTPIN D3
+
+#define DHTTYPE DHT11
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+  dht.begin();
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  float h = dht.readHumidity();
+  float t = dht.readTemperature();
+  Serial.print(F("Humidity: "));
+  Serial.print(h);
+  Serial.print(F("%  Temperature: "));
+  Serial.print(t);
+  Serial.println(F("°C "));
+  delay(2000);
+}

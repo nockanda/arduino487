@@ -1,0 +1,14 @@
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+  Serial.println("녹칸다가 잠에서 꺠어났다!!!");
+  Serial.println("출근하려면 양치를 2초간 해야한다!");
+  delay(2000);
+  Serial.println("앗 토요일이었네 다시 자야겠다! 10초간 자겠습니다!");
+  ESP.deepSleep(10e6);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}

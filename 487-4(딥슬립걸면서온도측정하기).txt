@@ -1,0 +1,20 @@
+#include "DHT.h"
+#define DHTPIN D3
+#define DHTTYPE DHT11
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+  dht.begin();
+  Serial.println();
+  float t = dht.readTemperature();
+  Serial.println(t);
+  Serial.println("딥슬립합니다!");
+  ESP.deepSleep(5e6);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+}

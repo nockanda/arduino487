@@ -1,0 +1,25 @@
+#define btn D3
+
+unsigned long t = 0;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+  pinMode(btn,INPUT_PULLUP);
+  Serial.println("프로그램이 시작되었습니다!");
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  if(digitalRead(btn) == LOW){
+    //5초간 딥슬립
+    Serial.println("5초만 자겠습니다!");
+    ESP.deepSleep(5e6);
+  }
+  
+  if(millis() - t > 1000){
+    t = millis();
+    Serial.println("안녕하세요 녹칸다입니다!");
+  }
+  
+}

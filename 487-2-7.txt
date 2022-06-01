@@ -1,0 +1,11 @@
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+  Serial.println("리셋버튼 누를때까지 저는 잡니다~~~");
+  ESP.deepSleep(0);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
