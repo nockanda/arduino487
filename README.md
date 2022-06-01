@@ -35,8 +35,11 @@ ESP8266 딥슬립(deep sleep)하는 방법과 소모전류 측정해보기!(deep
 
 1.wemos d1 mini보드에 deepsleep을 설정하는 기본 예시를 보이시오!<BR>
 2.보드 5종을 이용해서 기본예제 7개의 소모전류를 각각 측정하시오!<BR>
+![487-2_bb](https://user-images.githubusercontent.com/106683637/171438851-9c082121-4df0-42d6-8d27-9e4465d1f605.jpg)<BR>
 3.버튼 1개를 연결해서 내가 원하는 타이밍에 딥슬립을 걸 수 있도록 하시오!<BR>
+![487-3_bb](https://user-images.githubusercontent.com/106683637/171438930-cea07f86-07dd-4b86-af06-34185e6a3ff9.jpg)<BR>
 4.보드에 온습도센서가 달려있고 10초에한번마다 측정한다고 할때 시리얼모니터에 출력하고 나머지 시간은 딥슬립을 거시오!<BR>
+![487-4_bb](https://user-images.githubusercontent.com/106683637/171438979-b842f91e-8a70-45be-9007-9c852659b52c.jpg)<BR>
 5.온도와 습도값을 MQTT로 10초한번 전송하고 딥슬립하기!<BR>
   
 (Machine translation)<BR>
