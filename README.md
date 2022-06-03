@@ -102,7 +102,7 @@ It is said that if deep sleep is applied at this time, the current consumption o
 
 Let's learn how to put deep sleep and wake up!
 
-The wemos d1r1 board, the ESP8266 board used by Nokanda so far, is capable of deep sleep, but cannot be used because it cannot wakeup!
+The wemos d1r1 board, the ESP8266 board used by Nockanda so far, is capable of deep sleep, but cannot be used because it cannot wakeup!
 
 So, I prepared three boards for the experiment as follows!<BR>
 1.wemos D1 mini CH340<BR>
